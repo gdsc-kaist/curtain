@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2021",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/express.d.ts"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "$obj/*": [
+        "obj/*"
+      ],
+      "$db": [
+        "utils/db/index.js"
+      ],
+      "$db/*": [
+        "utils/db/*"
+      ],
+      "$gcp": [
+        "utils/gcp/index.js"
+      ],
+      "$gcp/*": [
+        "utils/gcp/*"
+      ],
+      "$utils/*": [
+        "utils/*"
+      ],
+      "$run/*": [
+        "run/*"
+      ],
+      "$types/*": [
+        "types/*"
+      ],
+      "$api/*": [
+        "api/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

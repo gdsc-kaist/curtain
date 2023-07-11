@@ -1,0 +1,22 @@
+{
+  "name": "curtain",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm funcky --dev --path-resolver",
+    "build": "pnpm funcky",
+    "start": "node --experimental-loader=extensionless build/index.mjs"
+  },
+  "author": "",
+  "dependencies": {
+    "funcky": "^0.4.1",
+    "node-fetch": "^3.3.1",
+    "redis": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "extensionless": "^1.4.5"
+  }
+}
